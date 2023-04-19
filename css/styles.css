@@ -158,50 +158,37 @@ h1, h2, h3, h4, h5, h6 { /*This is a way of combining selectors to reduce the no
   font-family: 'fantasy', sans-serif;
 }
 
-/* // Extra small devices (portrait phones, less than 576px) */
+/******CSS media query breakpoints*******/
 @media (max-width: 575.98px) {
   #title {
-        text-align: center;
-       }
+    text-align: center;
+  }
 
-   .mobile-image{
-       position: static;
-       transform: rotate(0);
-   }
+  .mobile-image{
+    position: static;
+    transform: rotate(0);
+  }
 }
-
-/* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #title {
-        text-align: center;
-       }
+  #title {
+    text-align: center;
+  }
 
-   .mobile-image{
-       position: static;
-       transform: rotate(0);
-   }
+  .mobile-image{
+    position: static;
+    transform: rotate(0);
+  }
 }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #title {
-        text-align: center;
-       }
-
-   .mobile-image{
-       position: static;
-       transform: rotate(0);
+@media (max-width: 992px) { /* With these CSS media query breakpoints, we can change how our
+                               website would be displayed on phone, a tablet or a laptop without
+                                affecting how it looks originally.*/
+   #title {
+     text-align: center;
    }
-}
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    #title {
-        text-align: center;
-       }
 
    .mobile-image{
-       position: static;
-       transform: rotate(0);
+     position: static;
+     transform: rotate(0);
    }
 }
 
